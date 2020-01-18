@@ -36,7 +36,7 @@ classdef Time < LivePlots.Plot
             obj.plot_ = plot(0, 0, 'Parent', axes_);
             obj.time_dur = time_dur;
             obj.first_plot = true;
-            obj.timer = Timing.Timer();
+            obj.timer = timing.Timer();
         end
         
         function update(obj, x, t)

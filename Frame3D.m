@@ -3,9 +3,9 @@ classdef Frame3D < LivePlots.Plot
     %   Author: Dan Oates (WPI Class of 2020)
     
     properties (SetAccess = protected)
-        plot_x;     % X-axis unit vector plot [LivePlots.Vector3D]
-        plot_y;     % Y-axis unit vector plot [LivePlots.Vector3D]
-        plot_z;     % Z-axis unit vector plot [LivePlots.Vector3D]
+        plot_x;     % X-axis unit vector plot [live_plot.Vector3D]
+        plot_y;     % Y-axis unit vector plot [live_plot.Vector3D]
+        plot_z;     % Z-axis unit vector plot [live_plot.Vector3D]
         unit_len;   % Unit vector lengths
     end
     
@@ -24,9 +24,9 @@ classdef Frame3D < LivePlots.Plot
             
             % Construction
             obj@LivePlots.Plot(axes_);
-            obj.plot_x = LivePlots.Vector3D(axes_);
-            obj.plot_y = LivePlots.Vector3D(axes_);
-            obj.plot_z = LivePlots.Vector3D(axes_);
+            obj.plot_x = live_plot.Vector3D(axes_);
+            obj.plot_y = live_plot.Vector3D(axes_);
+            obj.plot_z = live_plot.Vector3D(axes_);
             obj.unit_len = unit_len;
         end
         

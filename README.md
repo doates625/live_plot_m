@@ -14,7 +14,7 @@ this package are described below:
 - Frame3D.m : Class for 3D coordinate frame plots
 
 ### Dependencies
-- [timer_m](https://github.com/doates625/timer_m)
+- [timing_m](https://github.com/doates625/timing_m.git)
 
 ### Cloning and Submodules
 Clone this repo as '+live_plot' and add the containing dir to the Matlab path.

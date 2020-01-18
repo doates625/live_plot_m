@@ -3,8 +3,8 @@ classdef Frame2D < LivePlots.Plot
     %   Author: Dan Oates (WPI Class of 2020)
     
     properties (SetAccess = protected)
-        plot_x;     % X-axis unit vector plot [LivePlots.Vector2D]
-        plot_y;     % Y-axis unit vector plot [LivePlots.Vector2D]
+        plot_x;     % X-axis unit vector plot [live_plot.Vector2D]
+        plot_y;     % Y-axis unit vector plot [live_plot.Vector2D]
         unit_len;   % Unit vector lengths
     end
     
@@ -23,8 +23,8 @@ classdef Frame2D < LivePlots.Plot
             
             % Construction
             obj@LivePlots.Plot(axes_);
-            obj.plot_x = LivePlots.Vector2D(axes_);
-            obj.plot_y = LivePlots.Vector2D(axes_);
+            obj.plot_x = live_plot.Vector2D(axes_);
+            obj.plot_y = live_plot.Vector2D(axes_);
             obj.unit_len = unit_len;
         end
         
