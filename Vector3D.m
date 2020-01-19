@@ -1,4 +1,4 @@
-classdef Vector3D < LivePlots.Plot
+classdef Vector3D < live_plot.Plot
     %VECTOR3D Class for plotting 3D vectors
     %   Author: Dan Oates (WPI Class of 2020)
     
@@ -14,7 +14,7 @@ classdef Vector3D < LivePlots.Plot
             %   Inputs:
             %   - axes_ = Axes handle [Axes, default = gca]
             if nargin < 1, axes_ = gca; end
-            obj@LivePlots.Plot(axes_);
+            obj@live_plot.Plot(axes_);
             obj.plot_ = plot3(0, 0, 0, 'Parent', axes_);
         end
         

@@ -1,4 +1,4 @@
-classdef Time < LivePlots.Plot
+classdef Time < live_plot.Plot
     %TIME Class for live time plots
     %   
     %   Dependencies:
@@ -30,7 +30,7 @@ classdef Time < LivePlots.Plot
             if nargin < 1, time_dur = 5.0; end
             
             % Superconstructor
-            obj@LivePlots.Plot(axes_)
+            obj@live_plot.Plot(axes_)
             
             % Properties
             obj.plot_ = plot(0, 0, 'Parent', axes_);

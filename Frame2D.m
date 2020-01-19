@@ -1,4 +1,4 @@
-classdef Frame2D < LivePlots.Plot
+classdef Frame2D < live_plot.Plot
     %FRAME2D Class for plotting 2D coordinate frames
     %   Author: Dan Oates (WPI Class of 2020)
     
@@ -22,7 +22,7 @@ classdef Frame2D < LivePlots.Plot
             if nargin < 1, unit_len = 1.0; end
             
             % Construction
-            obj@LivePlots.Plot(axes_);
+            obj@live_plot.Plot(axes_);
             obj.plot_x = live_plot.Vector2D(axes_);
             obj.plot_y = live_plot.Vector2D(axes_);
             obj.unit_len = unit_len;

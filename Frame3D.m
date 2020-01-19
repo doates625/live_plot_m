@@ -1,4 +1,4 @@
-classdef Frame3D < LivePlots.Plot
+classdef Frame3D < live_plot.Plot
     %FRAME3D Class for plotting 3D coordinate frames
     %   Author: Dan Oates (WPI Class of 2020)
     
@@ -23,7 +23,7 @@ classdef Frame3D < LivePlots.Plot
             if nargin < 1, unit_len = 1.0; end
             
             % Construction
-            obj@LivePlots.Plot(axes_);
+            obj@live_plot.Plot(axes_);
             obj.plot_x = live_plot.Vector3D(axes_);
             obj.plot_y = live_plot.Vector3D(axes_);
             obj.plot_z = live_plot.Vector3D(axes_);
