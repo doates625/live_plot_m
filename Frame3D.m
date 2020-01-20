@@ -18,15 +18,18 @@ classdef Frame3D < live_plot.Plot
             %   - unit_len = Unit vector lengths [double, default = 1.0]
             %   - axes_ = Axes handle [Axes, default = gca]
             
+            % Imports
+            import('live_plot.Vector3D');
+            
             % Default args
             if nargin < 2, axes_ = gca; end
             if nargin < 1, unit_len = 1.0; end
             
             % Construction
             obj@live_plot.Plot(axes_);
-            obj.plot_x = live_plot.Vector3D(axes_);
-            obj.plot_y = live_plot.Vector3D(axes_);
-            obj.plot_z = live_plot.Vector3D(axes_);
+            obj.plot_x = Vector3D(axes_);
+            obj.plot_y = Vector3D(axes_);
+            obj.plot_z = Vector3D(axes_);
             obj.unit_len = unit_len;
         end
         

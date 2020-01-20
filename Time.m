@@ -25,6 +25,9 @@ classdef Time < live_plot.Plot
             %   - time_dur = Plot time length [sec, default = 5.0]
             %   - axes_ = Axes handle [Axes, default = gca]
             
+            % Imports
+            import('timing.Timer');
+            
             % Default args
             if nargin < 2, axes_ = gca; end
             if nargin < 1, time_dur = 5.0; end
@@ -36,7 +39,7 @@ classdef Time < live_plot.Plot
             obj.plot_ = plot(0, 0, 'Parent', axes_);
             obj.time_dur = time_dur;
             obj.first_plot = true;
-            obj.timer = timing.Timer();
+            obj.timer = Timer();
         end
         
         function update(obj, x, t)
