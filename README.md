@@ -3,8 +3,7 @@ Matlab package for real-time plotting classes
 Written by Dan Oates (WPI Class of 2020)
 
 ### Description
-This package contains classes for real-time plotting interfaces. The files in
-this package are described below:
+This package contains classes for real-time plotting interfaces. The files in this package are described below:
 
 - Plot : Superclass for live plots
 - Time : Class for scrolling time plots
